@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IMAGE Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+
+    <div class="header">
+      <h1>IMAGE GRID</h1>
+      <p>Click on one of the buttons to change the Grid-View</p>
+      <div class="icons">
+        <i class="fa fa-square" onclick="full()"></i>
+        <i class="fa fa-th-large" onclick="twoColumn()"></i>
+        <i class="fa fa-th" onclick="fourColumn()"></i>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div id="column1">
+        <img src="images/img1.jpg">
+        <img src="images/img2.jpg">
+        <img src="images/img3.jpg">
+        <img src="images/img4.jpg">
+        <img src="images/img5.jpg">
+        <img src="images/img6.jpg">
+        <img src="images/img7.jpg">
+        <img src="images/img8.jpg">
+        <img src="images/img9.jpg">
+        <img src="images/img10.jpg">
+      </div>
+  <div id="column2">
+    <img src="images/img11.jpg">
+    <img src="images/img12.jpg">
+    <img src="images/img13.jpg">
+    <img src="images/img41.jpg">
+    <img src="images/img15.jpg">
+    <img src="images/img16.jpg">
+    <img src="images/img17.jpg">
+    <img src="images/img18.jpg">
+    <img src="images/img19.jpg">
+    <img src="images/img20.jpg">
+  </div>
+  <div id="column3">
+    <img src="images/img21.jpg">
+    <img src="images/img22.jpg">
+    <img src="images/img23.jpg">
+    <img src="images/img24.jpg">
+    <img src="images/img25.jpg">
+    <img src="images/img26.jpg">
+    <img src="images/img27.jpg">
+    <img src="images/img28.jpg">
+    <img src="images/img29.jpg">
+    <img src="images/img30.jpg">
+</div>
+<div id="column4">
+  <img src="images/img31.jpg">
+  <img src="images/img32.jpg">
+  <img src="images/img33.jpg">
+  <img src="images/img34.jpg">
+  <img src="images/img35.jpg">
+  <img src="images/img36.jpg">
+  <img src="images/img37.jpg">
+  <img src="images/img38.jpg">
+  <img src="images/img39.jpg">
+  <img src="images/img40.jpg">
+  </div>
+</div>
+
+  <script>
+      function full(){
+        document.getElementById('column1').style.width = '100%';
+        document.getElementById('column2').style.width = '100%';
+        document.getElementById('column3').style.width = '100%';
+        document.getElementById('column4').style.width = '100%';
+      }
+      function twoColumn(){
+        document.getElementById('column1').style.width = '50%';
+        document.getElementById('column2').style.width = '50%';
+        document.getElementById('column3').style.width = '50%';
+        document.getElementById('column4').style.width = '50%';
+      }
+      function fourColumn(){
+        document.getElementById('column1').style.width = '25%';
+        document.getElementById('column2').style.width = '25%';
+        document.getElementById('column3').style.width = '25%';
+        document.getElementById('column4').style.width = '25%';
+      }
+  </script>
+
+  </body>
+</html>
